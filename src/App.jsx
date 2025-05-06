@@ -41,9 +41,9 @@ function App() {
         Project 2: FAQ/Accordion
       </h1>
       <div className="bg-blue-700 p-5 max-w-2xl m-auto mb-10 rounded-xl shadow-lg shadow-gray-800">
-        <p className="text-white text-3xl font-bold text-center">
+        <h2 className="text-white text-3xl font-bold text-center">
           Frequently Asked Questions
-        </p>
+        </h2>
         {questions.map((question) => (
           <Question
             key={question.id}
