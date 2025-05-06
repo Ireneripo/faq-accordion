@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       <h1 className="text-center text-3xl my-8">Project 2: FAQ/Accordion</h1>
-      <div className="bg-blue-800 p-5 max-w-2xl m-auto">
+      <div className="bg-blue-800 p-5 max-w-2xl m-auto mb-10 rounded-xl">
         <p className="text-white text-3xl font-bold text-center">
           Frequently Asked Questions
         </p>
@@ -49,6 +49,9 @@ function App() {
             >
               <div className="flex justify-between items-center">
                 <h2 className="text-xl font-bold my-2">{question.question}</h2>
+                <button className="border-3 border-blue-800 rounded-md bg-blue-200 px-2  cursor-pointer font-bold text-2xl text-blue-800">
+                  +
+                </button>
               </div>
               <p className="text-gray-600">{question.answer}</p>
             </div>
