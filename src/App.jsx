@@ -36,7 +36,9 @@ const questions = [
 function App() {
   return (
     <>
-      <h1 className="text-center text-3xl my-8">Project 2: FAQ/Accordion</h1>
+      <h1 className="text-center text-4xl my-8 font-bold">
+        Project 2: FAQ/Accordion
+      </h1>
       <div className="bg-blue-800 p-5 max-w-2xl m-auto mb-10 rounded-xl">
         <p className="text-white text-3xl font-bold text-center">
           Frequently Asked Questions
@@ -53,7 +55,7 @@ function App() {
                   +
                 </button>
               </div>
-              <p className="text-gray-600">{question.answer}</p>
+              <p className="text-gray-600 text-lg">{question.answer}</p>
             </div>
           );
         })}
