@@ -34,7 +34,29 @@ const questions = [
 ];
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <h1 className="text-center text-3xl my-8">Project 2: FAQ/Accordion</h1>
+      <div className="bg-blue-800 p-5 max-w-2xl m-auto">
+        <p className="text-white text-3xl font-bold text-center">
+          Frequently Asked Questions
+        </p>
+        {questions.map((question, index) => {
+          return (
+            <div
+              key={index}
+              className="bg-white my-6 p-4"
+            >
+              <div className="flex justify-between items-center">
+                <h2 className="text-xl font-bold my-2">{question.question}</h2>
+              </div>
+              <p className="text-gray-600">{question.answer}</p>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
 }
 
 export default App;
