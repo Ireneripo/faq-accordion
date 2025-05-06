@@ -39,7 +39,7 @@ function App() {
       <h1 className="text-center text-4xl my-8 font-bold">
         Project 2: FAQ/Accordion
       </h1>
-      <div className="bg-blue-800 p-5 max-w-2xl m-auto mb-10 rounded-xl">
+      <div className="bg-blue-700 p-5 max-w-2xl m-auto mb-10 rounded-xl shadow-lg shadow-gray-800">
         <p className="text-white text-3xl font-bold text-center">
           Frequently Asked Questions
         </p>
@@ -47,7 +47,7 @@ function App() {
           return (
             <div
               key={index}
-              className="bg-white my-6 p-4"
+              className="bg-white my-6 p-4 shadow-lg shadow-gray-800"
             >
               <div className="flex justify-between items-center">
                 <h2 className="text-xl font-bold my-2">{question.question}</h2>
